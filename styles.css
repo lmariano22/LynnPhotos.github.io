@@ -1,0 +1,116 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Botón para generar frases */
+#generate-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #6A5ACD;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#generate-btn:hover {
+    background: #483D8B;
+}
+
+/* Contenedor de la frase */
+#phrase {
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/* Galería con Grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 10px;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Estilos de las imágenes */
+.gallery img, .text-box {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* Cuadros de texto */
+.text-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: #8A8D92;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+/* Fullscreen para imágenes */
+.fullscreen {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s ease-in-out;
+}
+
+.fullscreen img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+/* 🔹 RESPONSIVE: Ajustar la galería en pantallas grandes */
+@media (min-width: 768px) {
+    .gallery {
+        max-width: 800px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .gallery {
+        max-width: 1000px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+
+
+
+
+
+
+/* Estilos del LOGOOO */
+
+
